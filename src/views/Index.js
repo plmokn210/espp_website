@@ -8,6 +8,7 @@ import React from "react";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
+import Calculator from "./index-sections/Calculator"
 
 // sections for this page
 import Images from "./index-sections/Images.js";
@@ -43,7 +44,7 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          <Images />
+          <Calculator />
           <SignUp />
         </div>
         <DarkFooter />
