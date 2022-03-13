@@ -9,6 +9,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import Calculator from "./index-sections/Calculator"
+import SignUpFormspree from "./index-sections/SignUpFormspree"
 
 // sections for this page
 import Images from "./index-sections/Images.js";
@@ -25,6 +26,7 @@ import CompleteExamples from "./index-sections/CompleteExamples.js";
 import SignUp from "./index-sections/SignUp.js";
 import Examples from "./index-sections/Examples.js";
 import Download from "./index-sections/Download.js";
+import ContactForm from "./index-sections/SignUpFormspree";
 
 function Index() {
   React.useEffect(() => {
@@ -45,6 +47,7 @@ function Index() {
         <IndexHeader />
         <div className="main">
           <Calculator />
+          <ContactForm/>
           <SignUp />
         </div>
         <DarkFooter />

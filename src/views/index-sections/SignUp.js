@@ -24,6 +24,7 @@ function SignUp() {
   const [lastFocus, setLastFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
   const [companyFocus, setCompanyFocus] = React.useState(false);
+  const [submitted, setSubmitted] = React.useState(false)
 
   return (
     <>
@@ -43,7 +44,11 @@ function SignUp() {
         <Container>
           <Row>
             <Card className="card-signup" data-background-color="blue">
-              <Form action="" className="form" method="">
+              <Form
+                action="https://formspree.io/f/mwkyqkpy"
+                className="form"
+                method="POST"
+              >
                 <CardHeader className="text-center">
                   <CardTitle className="title-up" tag="h3">
                     Sign Up
@@ -63,6 +68,8 @@ function SignUp() {
                     <Input
                       placeholder="First Name..."
                       type="text"
+                      name="first_name"
+                      required
                       onFocus={() => setFirstFocus(true)}
                       onBlur={() => setFirstFocus(false)}
                     ></Input>
@@ -80,6 +87,8 @@ function SignUp() {
                     <Input
                       placeholder="Last Name..."
                       type="text"
+                      name="last_name"
+                      required
                       onFocus={() => setLastFocus(true)}
                       onBlur={() => setLastFocus(false)}
                     ></Input>
@@ -98,6 +107,8 @@ function SignUp() {
                     <Input
                       placeholder="Company"
                       type="text"
+                      required
+                      name="company"
                       onFocus={() => setCompanyFocus(true)}
                       onBlur={() => setCompanyFocus(false)}
                     ></Input>
@@ -116,6 +127,8 @@ function SignUp() {
                     <Input
                       placeholder="Email..."
                       type="text"
+                      name="email"
+                      required
                       onFocus={() => setEmailFocus(true)}
                       onBlur={() => setEmailFocus(false)}
                     ></Input>
@@ -128,6 +141,7 @@ function SignUp() {
                     href="#pablo"
                     onClick={(e) => e.preventDefault()}
                     size="lg"
+                    type="submit"
                   >
                     Get Started
                   </Button>
