@@ -29,7 +29,7 @@ function Calculator() {
   const [maxSalaryAmount, setMaxSalaryAmount] = React.useState(0);
   const [calculatedAmount, setCalculatedAmount] = React.useState(0);
   const [loading, setLoading] = React.useState(false)
-  
+
   return (
     <>
       <div

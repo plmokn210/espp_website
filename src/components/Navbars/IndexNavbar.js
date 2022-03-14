@@ -61,7 +61,6 @@ function IndexNavbar() {
               Fairchild Group
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Boost your income, risk free*
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
@@ -113,7 +112,8 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href="/contact"
+                  to="/contact"
                   onClick={(e) => {
                     e.preventDefault();
                     document
@@ -122,10 +122,10 @@ function IndexNavbar() {
                   }}
                 >
                   <i className="now-ui-icons tech_mobile"></i>
-                  <p>Contact</p>
+                  <p>Contact us</p>
                 </NavLink>
               </NavItem>
-              <UncontrolledDropdown nav>
+              {/* <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
@@ -149,8 +149,8 @@ function IndexNavbar() {
                     am a business
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
-              <NavItem>
+              </UncontrolledDropdown> */}
+              {/* <NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"
                   target="_blank"
@@ -162,7 +162,7 @@ function IndexNavbar() {
                 <UncontrolledTooltip target="#twitter-tooltip">
                   Follow us on Twitter
                 </UncontrolledTooltip>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>

@@ -48,7 +48,7 @@ function Index() {
         <div className="main">
           <Calculator />
           {/* <ContactForm/> */}
-          <SignUp />
+          <SignUp className="main" />
         </div>
         <DarkFooter />
       </div>

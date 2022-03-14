@@ -20,14 +20,13 @@ import {
 
 // core components
 
-function SignUp() {
+function Contact() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
   const [companyFocus, setCompanyFocus] = React.useState(false);
   const [submitted, setSubmitted] = React.useState(false);
   const [state, handleSubmit] = useForm("mwkyqkpy");
-
 
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
@@ -167,4 +166,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default Contact;
