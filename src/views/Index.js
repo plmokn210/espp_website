@@ -47,7 +47,7 @@ function Index() {
         <IndexHeader />
         <div className="main">
           <Calculator />
-          <ContactForm/>
+          {/* <ContactForm/> */}
           <SignUp />
         </div>
         <DarkFooter />

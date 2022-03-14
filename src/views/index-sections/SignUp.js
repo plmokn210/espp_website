@@ -1,4 +1,5 @@
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import { Link } from "react-router-dom";
 // reactstrap components
 import {
@@ -24,8 +25,12 @@ function SignUp() {
   const [lastFocus, setLastFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
   const [companyFocus, setCompanyFocus] = React.useState(false);
-  const [submitted, setSubmitted] = React.useState(false)
+  const [submitted, setSubmitted] = React.useState(false);
+  const [state, handleSubmit] = useForm("mwkyqkpy");
 
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
     <>
       <div
@@ -44,10 +49,11 @@ function SignUp() {
         <Container>
           <Row>
             <Card className="card-signup" data-background-color="blue">
-              <Form
-                action="https://formspree.io/f/mwkyqkpy"
-                className="form"
-                method="POST"
+              <form
+                // action="https://formspree.io/f/mwkyqkpy"
+                // className="form"
+                // method="POST"
+                onSubmit={handleSubmit}
               >
                 <CardHeader className="text-center">
                   <CardTitle className="title-up" tag="h3">
@@ -135,18 +141,19 @@ function SignUp() {
                   </InputGroup>
                 </CardBody>
                 <CardFooter className="text-center">
-                  <Button
+                  <button
                     className="btn-neutral btn-round"
                     color="info"
                     href="#pablo"
-                    onClick={(e) => e.preventDefault()}
+                    onClick={(e) => {e.preventDefault(); handleSubmit()}}
                     size="lg"
                     type="submit"
+                    disabled={state.submitting}
                   >
                     Get Started
-                  </Button>
+                  </button>
                 </CardFooter>
-              </Form>
+              </form>
             </Card>
           </Row>
           <div className="col text-center"></div>
