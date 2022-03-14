@@ -153,7 +153,7 @@ function Calculator() {
                   <br />
                   {calculatedAmount === 0
                     ? ""
-                    : `Your expected addional earnings is: ${calculatedAmount}`}
+                    : `Your expected addional earnings is: $${calculatedAmount}`}
                 </CardFooter>
               </Form>
             </Card>
