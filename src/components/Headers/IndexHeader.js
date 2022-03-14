@@ -35,7 +35,7 @@ function IndexHeader() {
         ></div>
         <Container>
           <div className="content-center brand my-4">
-            <h1 className="h1-seo">Welcome to the world of ESPP</h1>
+            <h1 className="h1-seo">Fairchild Group</h1>
             <h3>Boost your income. Risk Free.</h3>
           </div>
         </Container>

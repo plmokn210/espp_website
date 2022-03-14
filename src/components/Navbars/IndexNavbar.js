@@ -58,7 +58,7 @@ function IndexNavbar() {
               target="_blank"
               id="navbar-brand"
             >
-              ESPP
+              Fairchild Group
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
               Boost your income, risk free*

@@ -15,7 +15,7 @@ function DarkFooter() {
                 href="https://www.creative-tim.com?ref=nukr-dark-footer"
                 target="_blank"
               >
-                ESPP
+                Fairchild Group
               </a>
             </li>
             <li>
@@ -34,7 +34,7 @@ function DarkFooter() {
             href="https://www.invisionapp.com?ref=nukr-dark-footer"
             target="_blank"
           >
-            { } ESPPco
+            { } Fairchild Group
           </a>
         </div>
       </Container>
