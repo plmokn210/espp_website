@@ -60,8 +60,7 @@ function IndexNavbar() {
             >
               Fairchild Group
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-            </UncontrolledTooltip>
+            <UncontrolledTooltip target="#navbar-brand"></UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -112,7 +111,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="/contact"
+                  href="https://fairchildgroup.herokuapp.com/contact"
                   to="/contact"
                   onClick={(e) => {
                     e.preventDefault();
