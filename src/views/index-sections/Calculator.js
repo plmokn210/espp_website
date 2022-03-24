@@ -83,7 +83,7 @@ function Calculator() {
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
-                      placeholder="Stock Purchase Discount (%)"
+                      placeholder="Discount (%)"
                       type="text"
                       onFocus={() => setDiscount(true)}
                       onBlur={() => setDiscount(false)}
@@ -102,7 +102,7 @@ function Calculator() {
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
-                      placeholder="Max Salary for Stock Purchase (%)"
+                      placeholder="Max (%)"
                       type="text"
                       onFocus={() => setmaxSalary(true)}
                       onBlur={() => setmaxSalary(false)}

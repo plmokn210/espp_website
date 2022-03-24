@@ -11,12 +11,7 @@ function DarkFooter() {
         <nav>
           <ul>
             <li>
-              <a
-                href="https://www.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
-              >
                 Fairchild Group
-              </a>
             </li>
             <li>
               <a
@@ -31,7 +26,7 @@ function DarkFooter() {
         <div className="copyright" id="copyright">
           © {new Date().getFullYear()}
           <a
-            href="https://www.invisionapp.com?ref=nukr-dark-footer"
+            href="/"
             target="_blank"
           >
             { } Fairchild Group
