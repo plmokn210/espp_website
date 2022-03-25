@@ -57,7 +57,7 @@ function Contact() {
               >
                 <CardHeader className="text-center">
                   <CardTitle className="title-up" tag="h3">
-                    Sign Up
+                    Contact Form
                   </CardTitle>
                 </CardHeader>
                 <CardBody>

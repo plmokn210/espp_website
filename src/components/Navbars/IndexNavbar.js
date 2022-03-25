@@ -54,13 +54,13 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
-              target="_blank"
+              href="/"
+              // target="_blank"
               id="navbar-brand"
             >
               Fairchild Group
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand"></UncontrolledTooltip>
+            {/* <UncontrolledTooltip target="#navbar-brand"></UncontrolledTooltip> */}
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -111,14 +111,14 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://fairchildgroup.herokuapp.com/contact"
-                  to="/contact"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
+                  href="/contact"
+                  // to="/contact"
+                  // onClick={(e) => {
+                  //   e.preventDefault();
+                  //   document
+                  //     .getElementById("download-section")
+                  //     .scrollIntoView();
+                  // }}
                 >
                   <i className="now-ui-icons tech_mobile"></i>
                   <p>Contact us</p>

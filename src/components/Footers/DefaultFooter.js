@@ -15,7 +15,7 @@ function DefaultFooter() {
             <ul>
               <li>
                 <a
-                  href="https://www.creative-tim.com?ref=nukr-dark-footer"
+                  href="/"
                   target="_blank"
                 >
                   Fairchild Group
@@ -23,7 +23,7 @@ function DefaultFooter() {
               </li>
               <li>
                 <a
-                  href="http://presentation.creative-tim.com?ref=nukr-dark-footer"
+                  href="/"
                   target="_blank"
                 >
                   About Us
@@ -34,7 +34,7 @@ function DefaultFooter() {
           <div className="copyright" id="copyright">
             © {new Date().getFullYear()}
             <a
-              href="https://www.invisionapp.com?ref=nukr-dark-footer"
+              href="/"
               target="_blank"
             >
               {} Fairchild Group
